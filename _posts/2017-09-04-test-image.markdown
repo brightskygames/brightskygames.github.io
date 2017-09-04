@@ -4,8 +4,8 @@ title:  "Test Image"
 date:   2017-09-04 14:42:20 +0800
 categories: jekyll update
 ---
-Hello... which is shown in the screenshot below:
-[![Download App]({{ site.url }}/assets/img/dl_app_store_badge_135x40.png)](app-link-1)
+Hello... which is shown in the screenshot below: 123
+[![Download App]({{ site.url }}/assets/img/dl_app_store_badge_135x40.png)][app-link-1]
 
 
 
