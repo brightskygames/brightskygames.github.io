@@ -5,6 +5,8 @@ ref: test_image
 date:   2017-09-04 14:42:20 +0800
 categories: jekyll update
 lang: en
+jsarr:
+- start_lightslider.js
 ---
 Hello... which is shown in the screenshot below: 123
 [![Download App]({{ site.url }}/assets/img/dl_app_store_badge_135x40.png)][app-link-1]
@@ -16,6 +18,13 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 
 
+<ul id="lightSlider">
+  <li><img src="{{ site.url }}/assets/img/bl/bl_iphone_ss_1.png" alt="ss1"/></li>
+  <li><img src="{{ site.url }}/assets/img/bl/bl_iphone_ss_2.png" alt="ss2"/></li>
+  <li><img src="{{ site.url }}/assets/img/bl/bl_iphone_ss_3.png" alt="ss3"/></li>
+  <li><img src="{{ site.url }}/assets/img/bl/bl_iphone_ss_4.png" alt="ss4"/></li>
+  <li><img src="{{ site.url }}/assets/img/bl/bl_iphone_ss_5.png" alt="ss5"/></li>
+</ul>
 
 Jekyll also offers powerful support for code snippets:
 
