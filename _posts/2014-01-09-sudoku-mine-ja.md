@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Sudoku Mine"
+title:  "ナンプレマイン"
 ref: sudoku_mine
 date:   2014-01-09 12:00:00 +0800
 thumbnail: /assets/img/sm/Icon-180.png
 categories: [ios, android]
-lang: en
+lang: ja
 order: 90
 jsarr:
 - start_lightslider.js
@@ -14,23 +14,18 @@ jsarr:
 {:.alignright}
 [![app icon]({{ site.url }}/assets/img/sm/Icon-180.png)][app-link-1]
 
-Sudoku Mine combines Sudoku puzzle with Minesweeper game.  
+# このアプリについて
 
-Rule  
-The goal is to place three mines in every row, column and region. The digits in the grid represent the number of mines in the neighbouring grids.
+ナンプレマインとは、ナンプレとマインスイーパを組み合わせたものです。
 
-# Content
-- 5 difficulty levels
-- Unlimited Mode generates random puzzles
+ゴールはすべての行、列、ブロックで３つのマインを見つけることです。数字は隣接セル内の地雷の数を表しています。
 
-# Features
-- Blink the completed region as you place mines
-- Autosave the process of unfinished levels
-- Record best completion time for each level
+# 内容：
+- 難易度５つ
 
-# Challenge
-- Compete with other players
-- Try to finish as many levels as possible
+# その他機能：
+- 自動的にセーブ
+- ベストタイムの記録
 
 {: #lightSlider }
 *   ![ss1]({{ site.url }}/assets/img/sm/screen_01.jpg)

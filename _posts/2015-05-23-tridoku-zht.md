@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Tridoku"
+title:  "三角數獨"
 ref: tridoku
 date:   2015-05-23 12:00:00 +0800
 thumbnail: /assets/img/tri/Icon-180.png
 categories: [ios, android]
-lang: en
+lang: zh-Hant
 order: 1
 jsarr:
 - start_lightslider.js

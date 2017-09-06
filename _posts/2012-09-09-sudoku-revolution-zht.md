@@ -6,6 +6,7 @@ date:   2012-09-09 12:00:00 +0800
 thumbnail: /assets/img/sr/Icon-180.png
 categories: [ios, android]
 lang: zh-Hant
+order: 40
 jsarr:
 - start_lightslider.js
 ---

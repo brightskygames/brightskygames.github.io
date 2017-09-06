@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Star Sudoku"
+title:  "星ナンプレ"
 ref: star_sudoku
 date:   2014-07-08 12:00:00 +0800
 thumbnail: /assets/img/star/Icon-180.png
 categories: [ios, android]
-lang: en
+lang: ja
 order: 5
 jsarr:
 - start_lightslider.js
@@ -14,22 +14,18 @@ jsarr:
 {:.alignright}
 [![app icon]({{ site.url }}/assets/img/star/Icon-180.png)][app-link-1]
 
-Star Sudoku consists of 6 larges triangles. The object is to fill all empty triangles so that each large triangle contains numbers 1 through 9. Every line (of length 9, even uncontinuous) contains every digit. Notice that the row on the outer edge includes the cell on the nearest sharp end of the figure.
+# このアプリについて
 
-**** Star Sudoku features ****
+星ナンプレとはナンプレの１つのバリエーションです。ボードは大きな三角形の6つから構成される。各三角形に1～9の数字が入いる。連続した一行内にも、途中で途切れている一行内にも、重複しないように数字を入れる。
 
-# Content
-- 5 difficulty levels
-- 5 board sizes
-- Unlimited Mode generates random puzzles
+# 内容：
+- 無限モード
+- 難易度５つ
 
-# Features
-- Autosave the process of unfinished levels
-- Record best completion time for each level
-
-# Challenge
-- Game Center Leaderboards
-- Try to finish as many levels as possible
+# その他機能：
+- ヒント機能は自動的にメモを入力
+- 自動的にセーブ
+- ベストタイムの記録
 
 {: #lightSlider }
 *   ![ss1]({{ site.url }}/assets/img/star/screen_01.jpg)

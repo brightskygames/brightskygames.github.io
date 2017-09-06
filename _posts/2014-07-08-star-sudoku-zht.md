@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Star Sudoku"
+title:  "星星數獨"
 ref: star_sudoku
 date:   2014-07-08 12:00:00 +0800
 thumbnail: /assets/img/star/Icon-180.png
 categories: [ios, android]
-lang: en
+lang: zh-Hant
 order: 5
 jsarr:
 - start_lightslider.js
@@ -14,22 +14,19 @@ jsarr:
 {:.alignright}
 [![app icon]({{ site.url }}/assets/img/star/Icon-180.png)][app-link-1]
 
-Star Sudoku consists of 6 larges triangles. The object is to fill all empty triangles so that each large triangle contains numbers 1 through 9. Every line (of length 9, even uncontinuous) contains every digit. Notice that the row on the outer edge includes the cell on the nearest sharp end of the figure.
+「星星數獨」帶給你各種全新類型的數獨。
 
-**** Star Sudoku features ****
+星星數獨的外觀是一個由六個三角形組成的星形。
 
-# Content
-- 5 difficulty levels
-- 5 board sizes
-- Unlimited Mode generates random puzzles
+基本規則：在空格上填入1到9的數字，令到每一個方向的每一行、每一個區域沒有重複的數字。
 
-# Features
-- Autosave the process of unfinished levels
-- Record best completion time for each level
 
-# Challenge
-- Game Center Leaderboards
-- Try to finish as many levels as possible
+# 內容
+- 5種難度
+
+# 功能
+- 自動記錄未完成的進度
+- 記錄最快完成時間
 
 {: #lightSlider }
 *   ![ss1]({{ site.url }}/assets/img/star/screen_01.jpg)

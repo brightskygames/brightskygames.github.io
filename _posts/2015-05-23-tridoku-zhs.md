@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Tridoku"
+title:  "三角数独"
 ref: tridoku
 date:   2015-05-23 12:00:00 +0800
 thumbnail: /assets/img/tri/Icon-180.png
 categories: [ios, android]
-lang: en
+lang: zh-Hans
 order: 1
 jsarr:
 - start_lightslider.js
@@ -35,7 +35,6 @@ Rules:
 # Challenge
 - Game Center Achievements
 - Try to complete as many levels as possible
-
 
 {: #lightSlider }
 *   ![ss1]({{ site.url }}/assets/img/tri/screen_01.jpg)

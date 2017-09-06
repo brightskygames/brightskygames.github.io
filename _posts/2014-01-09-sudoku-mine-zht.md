@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Sudoku Mine"
+title:  "地雷數獨"
 ref: sudoku_mine
 date:   2014-01-09 12:00:00 +0800
 thumbnail: /assets/img/sm/Icon-180.png
 categories: [ios, android]
-lang: en
+lang: zh-Hant
 order: 90
 jsarr:
 - start_lightslider.js
@@ -14,23 +14,18 @@ jsarr:
 {:.alignright}
 [![app icon]({{ site.url }}/assets/img/sm/Icon-180.png)][app-link-1]
 
-Sudoku Mine combines Sudoku puzzle with Minesweeper game.  
+「地雷數獨」帶給你全新類型的數獨。
 
-Rule  
-The goal is to place three mines in every row, column and region. The digits in the grid represent the number of mines in the neighbouring grids.
+地雷數獨結合了數獨和掃雷遊戲的玩法。
 
-# Content
-- 5 difficulty levels
-- Unlimited Mode generates random puzzles
+遊戲目的：在每個行，列，區域找出三個地雷。數字代表在相鄰地區中的地雷的數目。
 
-# Features
-- Blink the completed region as you place mines
-- Autosave the process of unfinished levels
-- Record best completion time for each level
+# 內容
+- 5種難度
 
-# Challenge
-- Compete with other players
-- Try to finish as many levels as possible
+# 功能
+- 自動記錄未完成的進度
+- 記錄最快完成時間
 
 {: #lightSlider }
 *   ![ss1]({{ site.url }}/assets/img/sm/screen_01.jpg)
