@@ -8,7 +8,7 @@ $(document).ready(function() {
  
         speed: 400, //ms'
         auto: false,
-        loop: false,
+        loop: true,
         slideEndAnimation: true,
         pause: 2000
     });
