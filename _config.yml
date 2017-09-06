@@ -19,6 +19,12 @@ title:
   en: Bright Sky Games
   zh-Hans: Bright Sky 游戏
   zh-Hant: Bright Sky 遊戲
+  ja: Bright Sky ゲーム
+lang_natural:
+  en: en
+  zh-Hans: 简体
+  zh-Hant: 繁體
+  ja: 日本語
 email: brightskygames@me.com
 description: 
   en: > # this means to ignore newlines
@@ -31,6 +37,10 @@ description:
     Google search results) and in your feed.xml site description.
   zh-Hant: >
     遊戲 Write an awesome description for your new site here. You can edit this
+    line in _config.yml. It will appear in your document head meta (for
+    Google search results) and in your feed.xml site description.
+  ja: >
+    ゲーム Write an awesome description for your new site here. You can edit this
     line in _config.yml. It will appear in your document head meta (for
     Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
