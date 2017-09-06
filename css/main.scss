@@ -17,6 +17,13 @@ $spacing-unit:     30px;
 $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
+$background-image: '/assets/img/128-168.jpg';
+
+/// Base path for assets (fonts, images...),
+/// should not include trailing slash
+/// @access public
+/// @type String
+$asset-base-path: '../assets' !default;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
