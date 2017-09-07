@@ -17,9 +17,9 @@
 
 title:
   en: Bright Sky Games
-  zh-Hans: Bright Sky 游戏
-  zh-Hant: Bright Sky 遊戲
-  ja: Bright Sky ゲーム
+  zh-Hans: Bright Sky Games
+  zh-Hant: Bright Sky Games
+  ja: Bright Sky Games
 lang_natural:
   en: en
   zh-Hans: 简体
@@ -28,21 +28,15 @@ lang_natural:
 email: brightskygames@me.com
 description: 
   en: > # this means to ignore newlines
-    Write an awesome description for your new site here. You can edit this
-    line in _config.yml. It will appear in your document head meta (for
-    Google search results) and in your feed.xml site description.
+    Logic puzzle games including Sudoku, Kakuro. Many variations to popular logic puzzles. 
+    Available in iOS and Android devices. Play Now!
   zh-Hans: >
-    游戏 Write an awesome description for your new site here. You can edit this
-    line in _config.yml. It will appear in your document head meta (for
-    Google search results) and in your feed.xml site description.
+    适用于iPhone,iPad和安卓系统的数独游戏. 数独是一种逻辑性的数字填充游戏. 还有其他游戏包括: 武士数独, 数和. 立即下载.
   zh-Hant: >
-    遊戲 Write an awesome description for your new site here. You can edit this
-    line in _config.yml. It will appear in your document head meta (for
-    Google search results) and in your feed.xml site description.
+    免費的 iOS, Android 數字填充遊戲. 數獨是一種邏輯性的數字填充遊戲. 還有其他遊戲包括: 武士數獨, 數和. 立即下載.
   ja: >
-    ゲーム Write an awesome description for your new site here. You can edit this
-    line in _config.yml. It will appear in your document head meta (for
-    Google search results) and in your feed.xml site description.
+    無料で遊べる脳トレパズルゲームアプリ。 サムライ数独、カクロなどのロジックパズルゲーム。 多くのバリエーション。
+    iOSとAndroid端末で利用可能。今すぐダウンロード。
 index:
   en:
   zh-Hans: index-zhs.html

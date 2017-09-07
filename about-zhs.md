@@ -5,17 +5,8 @@ ref: about
 lang: zh-Hans
 ---
 
-繁体字
+# 关於本网站
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+自从2012年发布游戏「新型数独」以来，我们不断为广大玩家提供各色各样的逻辑谜题，於 App Store 和 Google Play 可供免费下载。
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+无论你是一位永远都无法得到满足的狂热逻辑谜题爱好者，还是一位只需要简短的大脑锻炼的休闲玩家，说不准你就会立即爱上Bright Sky Games。

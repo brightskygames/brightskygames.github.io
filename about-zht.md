@@ -5,17 +5,8 @@ ref: about
 lang: zh-Hant
 ---
 
-繁體字
+# 關於本網站
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+自從2012年發佈遊戲「新型數獨」以來，我們不斷為廣大玩家提供各色各樣的邏輯謎題，於 App Store 和 Google Play 可供免費下載。
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+無論你是一位永遠都無法得到滿足的狂熱邏輯謎題愛好者，還是一位只需要簡短的大腦鍛鍊的休閒玩家，說不準你就會立即愛上Bright Sky Games。

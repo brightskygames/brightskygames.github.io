@@ -12,35 +12,26 @@ jsarr:
 ios_link: http://itunes.apple.com/app/id991239522
 and_link: https://play.google.com/store/apps/details?id=com.stanleylam.tridoku
 short_desc: >
-  The numbers 1 to 9 must be placed into each large triange.
-  Each of the extra 'legs' of the shaded triangle must contains numbers 1 to 9.
-  No two neighboring (touching) cells may contain the same numbers.
+  三角ナンプレとはナンプレの１つのバリエーションです。いくつの条件をすべて満たすように、適切に数字を入れていく数字パズルです。
 ---
 
 {:.alignright}
 [![app icon]({{ site.url }}/assets/img/tri/Icon-180.png)][app-link-1]
 
-Tridoku puzzles contains 9 large triangles.
+三角ナンプレとはナンプレの１つのバリエーションです。次の条件をすべて満たすように、適切に数字を入れていく数字パズルです。
+1. 大きな三角形に1～9までの数字がひとつずつ入ります
+2. 内側の三角形の3つの辺に1～9までの数字がひとつずつ入ります
+3. 外側の三角形の3つの辺に1～9までの数字がひとつずつ入ります
+4. 隣接する2つのマスが同じ数字を含むことはできません
 
-Rules:
-1. The numbers 1 to 9 must be placed into each large triange.
-2. Each of the three legs of the inner shaded triangle must contains numbers 1 to 9
-3. Each of the three legs of the outer shaded triangle must contains numbers 1 to 9
-4. No two neighboring (touching) cells may contain the same numbers
+# 内容：
+- 無限モード
+- 難易度５つ
 
-# Content
-- 5 difficulty levels
-- Unlimited Mode generates random puzzles
-
-# Features
-- "Hint" auto fills the board with memo that has no direct conflicts with other numbers
-- Highlight same numbers as you select a number on board
-- Autosave the process of unfinished levels
-- Record best completion time for each level
-
-# Challenge
-- Game Center Achievements
-- Try to complete as many levels as possible
+# その他機能：
+- ヒント機能は自動的にメモを入力
+- 自動的にセーブ
+- ベストタイムの記録
 
 
 {: #lightSlider }

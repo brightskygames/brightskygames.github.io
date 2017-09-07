@@ -6,15 +6,8 @@ ref: about
 lang: en
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# About this website
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Since its debut in 2012 Bright Sky Games has been continuously offering the most advanced logic puzzling experience available in App Store and Google Play.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+No matter whether you are an avid solver who can never get enough puzzles or a casual gamer setting on a brief brain-stimulating break, chances are you're going to love Bright Sky Games.

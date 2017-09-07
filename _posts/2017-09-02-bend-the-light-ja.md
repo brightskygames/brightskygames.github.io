@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Bend the Light"
+title:  "光を曲げろ"
 ref: bend_the_light
 date:   2017-09-02 12:00:00 +0800
 thumbnail: /assets/img/bl/screen_01_small.jpg
@@ -16,6 +16,9 @@ short_desc: >
 
 {:.alignright}
 [![app icon]({{ site.url }}/assets/img/bl/bl-180.png)][app-link-1]
+
+光を曲げろとは、レーザーと鏡などのものを使うパズルゲームです。
+
 
 Bend the Light is a puzzle game of lasers and mirrors. Your goal is to build constructions that deflect beams so they hit desingated targets. It offers levels ranging from easy distractions to hard challenges.
 

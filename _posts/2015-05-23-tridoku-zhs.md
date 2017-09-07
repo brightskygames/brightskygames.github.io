@@ -12,35 +12,32 @@ jsarr:
 ios_link: http://itunes.apple.com/app/id991239522
 and_link: https://play.google.com/store/apps/details?id=com.stanleylam.tridoku
 short_desc: >
-  The numbers 1 to 9 must be placed into each large triange.
-  Each of the extra 'legs' of the shaded triangle must contains numbers 1 to 9.
-  No two neighboring (touching) cells may contain the same numbers.
+  每个大的三角形包含数字1至9。
+  内部阴影三角形的每一边都有数字1至9。
+  外部阴影三角形的每一边都有数字1至9。
+  两个相邻的格不能有相同的数字。
 ---
 
 {:.alignright}
 [![app icon]({{ site.url }}/assets/img/tri/Icon-180.png)][app-link-1]
 
-Tridoku puzzles contains 9 large triangles.
+三角数独由三个大三角形组成。
 
-Rules:
-1. The numbers 1 to 9 must be placed into each large triange.
-2. Each of the three legs of the inner shaded triangle must contains numbers 1 to 9
-3. Each of the three legs of the outer shaded triangle must contains numbers 1 to 9
-4. No two neighboring (touching) cells may contain the same numbers
+规则：
+1. 每个大的三角形包含数字1至9。
+2. 内部阴影三角形的每一边都有数字1至9。
+3. 外部阴影三角形的每一边都有数字1至9。
+4. 两个相邻的格不能有相同的数字。
 
-# Content
-- 5 difficulty levels
-- Unlimited Mode generates random puzzles
+# 内容
+- 5种难度
+- 无限模式生成随机题目
 
-# Features
-- "Hint" auto fills the board with memo that has no direct conflicts with other numbers
-- Highlight same numbers as you select a number on board
-- Autosave the process of unfinished levels
-- Record best completion time for each level
 
-# Challenge
-- Game Center Achievements
-- Try to complete as many levels as possible
+# 功能
+- 自动记录未完成的进度
+- 记录最快完成时间
+
 
 {: #lightSlider }
 *   ![ss1]({{ site.url }}/assets/img/tri/screen_01.jpg)

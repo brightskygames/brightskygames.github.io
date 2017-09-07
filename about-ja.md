@@ -1,21 +1,11 @@
 ---
 layout: page
-title: About
+title: 概要
 ref: about
 lang: ja
 ---
 
-このウェブサイトについて
+# このウェブサイトについて
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+2012年に初めてゲームアプリを配信した以来、様々なパズルゲームを開発してきました．いくらパズルを解いても足りないコアなパズルプレーヤー、時々パズルを解いて楽しむカジュアルファン、脳のトレーニング目的で時々解きたい皆様、ぜひBright Sky Games に遊びに来てください。
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Bend the Light"
+title:  "彎曲光線"
 ref: bend_the_light
 date:   2017-09-02 12:00:00 +0800
 thumbnail: /assets/img/bl/screen_01_small.jpg
