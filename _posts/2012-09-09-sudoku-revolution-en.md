@@ -12,14 +12,14 @@ jsarr:
 ios_link: http://itunes.apple.com/app/id546630587
 and_link: https://play.google.com/store/apps/details?id=com.stanleylam.sudoku.revolution
 short_desc: >
-  Bored with normal Sudoku rules? Sudoku Revoltuion brings you new rules for Sudoku!
+  Bored with normal Sudoku rules? Sudoku Revolution brings you new rules for Sudoku!
   Sudoku Revolution contains several variations of Sudoku puzzles.
 ---
 
 {:.alignright}
 [![app icon]({{ site.url }}/assets/img/sr/Icon-180.png)][app-link-1]
 
-Bored with normal Sudoku rules? Sudoku Revoltuion brings you new rules for Sudoku!  
+Bored with normal Sudoku rules? Sudoku Revolution brings you new rules for Sudoku!  
 
 Sudoku Revolution contains several variations of Sudoku puzzles.  
 

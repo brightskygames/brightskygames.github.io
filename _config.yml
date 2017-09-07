@@ -37,6 +37,11 @@ description:
   ja: >
     無料で遊べる脳トレパズルゲームアプリ。 サムライ数独、カクロなどのロジックパズルゲーム。 多くのバリエーション。
     iOSとAndroid端末で利用可能。今すぐダウンロード。
+keywords:
+  en: free logic puzzles, samurai, sudoku, puzzle games, mobile games, ipad games, kakuro, logic games, variants, variations, hyper sudoku, sudoku revolution
+  zh-Hans: 数独,数和,数独游戏,数独技巧,数独网站,数独软件,sudoku,在线数独,免费
+  zh-Hant: 數獨,數和,解謎遊戲,邏輯遊戲,數獨遊戲,推論,方框,邏輯,謎題,橫行,答案,解答,方形,正方形,空格,方格,數字,演譯
+  ja: 無料ロジックパズル, 数独, すうどく, パズルゲーム, ナンプレ, ロジックゲーム, バラエティ, バリエーション, パクロス, 問題集
 index:
   en:
   zh-Hans: index-zhs.html
@@ -44,7 +49,7 @@ index:
   ja: index-ja.html
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
+twitter_username: brightskygames
 github_username:  brightskygames
 
 # Build settings
