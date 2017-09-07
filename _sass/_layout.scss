@@ -191,11 +191,18 @@
 
 .post-link {
     display: block;
-    font-size: 22px; // 4vmin
+    font-size: 36px;
+     // 4vmin
+    @include media-query($on-laptop) {
+        font-size: 26px;
+    }
 }
 
 .post-subtitle {
     font-size: 18px;
+    @include media-query($on-laptop) {
+        font-size: 14px;
+    }
 }
 
 
