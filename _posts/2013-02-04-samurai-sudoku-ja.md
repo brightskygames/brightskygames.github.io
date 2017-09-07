@@ -3,12 +3,16 @@ layout: post
 title:  "侍数独"
 ref: samurai_sudoku
 date:   2013-02-04 12:00:00 +0800
-thumbnail: /assets/img/ss/Icon-180.png
+thumbnail: /assets/img/ss/s1.jpg
 categories: [ios, android]
 lang: ja
 order: 10
 jsarr:
 - start_lightslider.js
+ios_link: http://itunes.apple.com/app/id594421598
+and_link: https://play.google.com/store/apps/details?id=com.stanleylam.samuraisudoku
+short_desc: >
+  侍数独は、5つの数独が集まってできたものです。各数独は、各行、各列とも9マスあり、各マスに1～9までの数字がひとつずつ入ります。
 ---
 
 {:.alignright}

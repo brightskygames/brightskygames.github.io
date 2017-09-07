@@ -1,0 +1,26 @@
+<table style="width:100%">
+{% assign posts=site.posts | where:"lang", page.lang | sort: 'order', 'last' %}
+{% for post in posts %}
+<tr>
+<td>
+  {% if post.thumbnail %}
+    <div style="float: left; height: 226px; width: 151px; margin-right: 30px; margin-bottom: 10px">
+        <a href="{{ post.url }}" ><img style="max-height: 100%; max-width: 100%" src="{{ post.thumbnail | prepend: site.url }}" alt="thumbnail"  />
+    </div>
+  {% endif %}
+  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  <p>{{ post.short_desc }}</p>
+  {% if post.categories contains 'ios' %}
+    <p><a href="{{ post.ios_link }}" >
+      <img src="{{ site.url }}/assets/img/dl_app_store_badge_135x40.png" alt="Download on the AppStore" title="Download on the AppStore" />
+    </a></p>
+  {% endif %}
+  {% if post.categories contains 'android' %}
+    <p><a href="{{ post.and_link }}" >
+      <img src="{{ site.url }}/assets/img/google_play_badge.png" alt="Get it on Google Play" title="Get it on Google Play" />
+    </a></p>
+  {% endif %}
+</td>
+</tr>
+{% endfor %}
+</table>

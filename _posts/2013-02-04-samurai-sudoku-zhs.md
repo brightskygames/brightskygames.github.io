@@ -3,12 +3,16 @@ layout: post
 title:  "武士数独"
 ref: samurai_sudoku
 date:   2013-02-04 12:00:00 +0800
-thumbnail: /assets/img/ss/Icon-180.png
+thumbnail: /assets/img/ss/s1.jpg
 categories: [ios, android]
 lang: zh-Hans
 order: 10
 jsarr:
 - start_lightslider.js
+ios_link: http://itunes.apple.com/app/id594421598
+and_link: https://play.google.com/store/apps/details?id=com.stanleylam.samuraisudoku
+short_desc: >
+  在9×9格的大九宫格中，有9个3×3格的小九宫格。每个数独里，每个直行，每个横列，每个小方块内都有1到9的数字，且每个数字只出现一次
 ---
 
 {:.alignright}

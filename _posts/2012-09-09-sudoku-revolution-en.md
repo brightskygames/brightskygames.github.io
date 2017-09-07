@@ -3,12 +3,17 @@ layout: post
 title:  "Sudoku Revolution"
 ref: sudoku_revolution
 date:   2012-09-09 12:00:00 +0800
-thumbnail: /assets/img/sr/Icon-180.png
+thumbnail: /assets/img/sr/screen_01.jpg
 categories: [ios, android]
 lang: en
 order: 40
 jsarr:
 - start_lightslider.js
+ios_link: http://itunes.apple.com/app/id546630587
+and_link: https://play.google.com/store/apps/details?id=com.stanleylam.sudoku.revolution
+short_desc: >
+  Bored with normal Sudoku rules? Sudoku Revoltuion brings you new rules for Sudoku!
+  Sudoku Revolution contains several variations of Sudoku puzzles.
 ---
 
 {:.alignright}

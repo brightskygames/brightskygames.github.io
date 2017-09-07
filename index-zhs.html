@@ -6,36 +6,9 @@ lang: zh-Hans
 
 <div class="home">
 
-<h1 class="page-heading">游戏</h1>
+<h1 class="page-heading">Stanley Lam 的游戏</h1>
 
-<table style="width:100%">
-  <col width="33%">
-  <col width="33%">
-  <col width="34%">
-  {% assign posts=site.posts | where:"lang", page.lang | sort: 'order', 'last' %}
-  {% for post in posts %}
-    {% assign mod = forloop.index0 | modulo:3 %}
-    
-    {% if mod == 0 %}
-      <tr>
-    {% endif %}
-    
-    <td>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <div>
-          {% if post.thumbnail %}
-          <a href="{{ post.url }}" ><img src="{{ post.thumbnail | prepend: site.url }}" />
-          {% endif %}
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </div>
-    </td>
-    
-    {% if mod == 2 or forloop.last == true %}
-      </tr>
-    {% endif %}
-  {% endfor %}
-</table>
+{% include index_base.html %}
 
 <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 

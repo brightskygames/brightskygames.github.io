@@ -3,12 +3,16 @@ layout: post
 title:  "Star Sudoku"
 ref: star_sudoku
 date:   2014-07-08 12:00:00 +0800
-thumbnail: /assets/img/star/Icon-180.png
+thumbnail: /assets/img/star/screen_01.jpg
 categories: [ios, android]
 lang: en
 order: 5
 jsarr:
 - start_lightslider.js
+ios_link: http://itunes.apple.com/app/id877502433
+and_link: https://play.google.com/store/apps/details?id=com.stanleylam.starsudoku
+short_desc: >
+  Star Sudoku consists of 6 larges triangles. The object is to fill all empty triangles so that each large triangle contains numbers 1 through 9. Every line (of length 9, even uncontinuous) contains every digit.
 ---
 
 {:.alignright}
