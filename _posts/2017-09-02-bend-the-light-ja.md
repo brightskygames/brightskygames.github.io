@@ -15,7 +15,7 @@ short_desc: >
 ---
 
 {:.alignright}
-[![app icon]({{ site.url }}/assets/img/bl/bl-180.png)][app-link-1]
+![app icon]({{ site.url }}/assets/img/bl/bl-180.png)
 
 光を曲げろとは、レーザーと鏡などのものを使うパズルゲームです。
 
@@ -36,6 +36,4 @@ Bend the Light is a puzzle game of lasers and mirrors. Your goal is to build con
 *   ![ss4]({{ site.url }}/assets/img/bl/bl_iphone_ss_4.png)
 *   ![ss5]({{ site.url }}/assets/img/bl/bl_iphone_ss_5.png)
 
-[![Download App]({{ site.url }}/assets/img/dl_app_store_badge_135x40.png)][app-link-1]
-
-[app-link-1]: https://itunes.apple.com/us/app/bend-the-light/id1260256282?ls=1&mt=8
+{% include post_end.md %}

@@ -17,7 +17,7 @@ short_desc: >
 ---
 
 {:.alignright}
-[![app icon]({{ site.url }}/assets/img/sr/Icon-180.png)][app-link-1]
+![app icon]({{ site.url }}/assets/img/sr/Icon-180.png)]
 
 Bored with normal Sudoku rules? Sudoku Revolution brings you new rules for Sudoku!  
 
@@ -60,8 +60,5 @@ Free play through hundreds of levels.
 *   ![ss4]({{ site.url }}/assets/img/sr/screen_04.jpg)
 *   ![ss5]({{ site.url }}/assets/img/sr/screen_05.jpg)
 
-[![Download App]({{ site.url }}/assets/img/dl_app_store_badge_135x40.png)][app-link-1]
-[![Download App]({{ site.url }}/assets/img/google_play_badge.png)][app-link-a]
+{% include post_end.md %}
 
-[app-link-1]: http://itunes.apple.com/app/id546630587
-[app-link-a]: https://play.google.com/store/apps/details?id=com.stanleylam.sudoku.revolution

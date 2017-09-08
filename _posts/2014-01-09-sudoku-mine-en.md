@@ -17,7 +17,7 @@ short_desc: >
 ---
 
 {:.alignright}
-[![app icon]({{ site.url }}/assets/img/sm/Icon-180.png)][app-link-1]
+![app icon]({{ site.url }}/assets/img/sm/Icon-180.png)
 
 Sudoku Mine combines Sudoku puzzle with Minesweeper game.  
 
@@ -44,8 +44,4 @@ The goal is to place three mines in every row, column and region. The digits in 
 *   ![ss4]({{ site.url }}/assets/img/sm/screen_04.jpg)
 *   ![ss5]({{ site.url }}/assets/img/sm/screen_05.jpg)
 
-[![Download App]({{ site.url }}/assets/img/dl_app_store_badge_135x40.png)][app-link-1]
-[![Download App]({{ site.url }}/assets/img/google_play_badge.png)][app-link-a]
-
-[app-link-1]: http://itunes.apple.com/app/id762133374
-[app-link-a]: https://play.google.com/store/apps/details?id=com.stanleylam.sudokumine
+{% include post_end.md %}

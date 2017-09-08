@@ -16,7 +16,7 @@ short_desc: >
 ---
 
 {:.alignright}
-[![app icon]({{ site.url }}/assets/img/kkr/Icon-180.png)][app-link-1]
+![app icon]({{ site.url }}/assets/img/kkr/Icon-180.png)
 
 数和:
 被斜线分开的方格中，右上的数字等於其右侧数字之和，左下的数字等於其下方数字之和。
@@ -46,6 +46,4 @@ short_desc: >
 *   ![ss4]({{ site.url }}/assets/img/kkr/screen_04.jpg)
 *   ![ss5]({{ site.url }}/assets/img/kkr/screen_05.jpg)
 
-[![Download App]({{ site.url }}/assets/img/dl_app_store_badge_135x40.png)][app-link-1]
-
-[app-link-1]: http://itunes.apple.com/app/id1185788482
+{% include post_end.md %}

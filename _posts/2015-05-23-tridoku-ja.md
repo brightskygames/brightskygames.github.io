@@ -16,7 +16,7 @@ short_desc: >
 ---
 
 {:.alignright}
-[![app icon]({{ site.url }}/assets/img/tri/Icon-180.png)][app-link-1]
+![app icon]({{ site.url }}/assets/img/tri/Icon-180.png)
 
 三角ナンプレとはナンプレの１つのバリエーションです。次の条件をすべて満たすように、適切に数字を入れていく数字パズルです。
 1. 大きな三角形に1～9までの数字がひとつずつ入ります
@@ -41,8 +41,4 @@ short_desc: >
 *   ![ss4]({{ site.url }}/assets/img/tri/screen_04.jpg)
 *   ![ss5]({{ site.url }}/assets/img/tri/screen_05.jpg)
 
-[![Download App]({{ site.url }}/assets/img/dl_app_store_badge_135x40.png)][app-link-1]
-[![Download App]({{ site.url }}/assets/img/google_play_badge.png)][app-link-a]
-
-[app-link-1]: http://itunes.apple.com/app/id991239522
-[app-link-a]: https://play.google.com/store/apps/details?id=com.stanleylam.tridoku
+{% include post_end.md %}

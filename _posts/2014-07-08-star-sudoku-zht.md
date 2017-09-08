@@ -16,7 +16,7 @@ short_desc: >
 ---
 
 {:.alignright}
-[![app icon]({{ site.url }}/assets/img/star/Icon-180.png)][app-link-1]
+![app icon]({{ site.url }}/assets/img/star/Icon-180.png)
 
 「星星數獨」帶給你各種全新類型的數獨。
 
@@ -39,8 +39,4 @@ short_desc: >
 *   ![ss4]({{ site.url }}/assets/img/star/screen_04.jpg)
 *   ![ss5]({{ site.url }}/assets/img/star/screen_05.jpg)
 
-[![Download App]({{ site.url }}/assets/img/dl_app_store_badge_135x40.png)][app-link-1]
-[![Download App]({{ site.url }}/assets/img/google_play_badge.png)][app-link-a]
-
-[app-link-1]: http://itunes.apple.com/app/id877502433
-[app-link-a]: https://play.google.com/store/apps/details?id=com.stanleylam.starsudoku
+{% include post_end.md %}

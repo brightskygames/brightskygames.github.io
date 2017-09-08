@@ -16,7 +16,7 @@ short_desc: >
 ---
 
 {:.alignright}
-[![app icon]({{ site.url }}/assets/img/ss/Icon-180.png)][app-link-1]
+![app icon]({{ site.url }}/assets/img/ss/Icon-180.png)
 
 在9×9格的大九宫格中，有9个3×3格的小九宫格。每个数独里，每个直行，每个横列，每个小方块内都有1到9的数字，且每个数字只出现一次
 
@@ -38,8 +38,5 @@ short_desc: >
 *   ![ss4]({{ site.url }}/assets/img/ss/s4.jpg)
 *   ![ss5]({{ site.url }}/assets/img/ss/s5.jpg)
 
-[![Download App]({{ site.url }}/assets/img/dl_app_store_badge_135x40.png)][app-link-1]
-[![Download App]({{ site.url }}/assets/img/google_play_badge.png)][app-link-a]
+{% include post_end.md %}
 
-[app-link-1]: http://itunes.apple.com/app/id594421598
-[app-link-a]: https://play.google.com/store/apps/details?id=com.stanleylam.samuraisudoku

@@ -16,7 +16,7 @@ short_desc: >
 ---
 
 {:.alignright}
-[![app icon]({{ site.url }}/assets/img/ss/Icon-180.png)][app-link-1]
+![app icon]({{ site.url }}/assets/img/ss/Icon-180.png)
 
 Samurai Sudoku puzzle contains five overlapping sudoku grids. The basic sudoku rules apply to each 9 x 9 grid.
 
@@ -47,8 +47,5 @@ Free play through hundreds of levels.
 *   ![ss4]({{ site.url }}/assets/img/ss/s4.jpg)
 *   ![ss5]({{ site.url }}/assets/img/ss/s5.jpg)
 
-[![Download App]({{ site.url }}/assets/img/dl_app_store_badge_135x40.png)][app-link-1]
-[![Download App]({{ site.url }}/assets/img/google_play_badge.png)][app-link-a]
 
-[app-link-1]: http://itunes.apple.com/app/id594421598
-[app-link-a]: https://play.google.com/store/apps/details?id=com.stanleylam.samuraisudoku
+{% include post_end.md %}

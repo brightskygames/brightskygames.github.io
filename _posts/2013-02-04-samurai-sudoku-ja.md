@@ -16,7 +16,7 @@ short_desc: >
 ---
 
 {:.alignright}
-[![app icon]({{ site.url }}/assets/img/ss/Icon-180.png)][app-link-1]
+![app icon]({{ site.url }}/assets/img/ss/Icon-180.png)
 
 # このアプリについて
 侍数独は、5つの数独が集まってできたものです。各数独は、各行、各列とも9マスあり、各マスに1～9までの数字がひとつずつ入ります。
@@ -41,6 +41,4 @@ short_desc: >
 *   ![ss4]({{ site.url }}/assets/img/ss/s4.jpg)
 *   ![ss5]({{ site.url }}/assets/img/ss/s5.jpg)
 
-[![Download App]({{ site.url }}/assets/img/dl_app_store_badge_135x40.png)][app-link-1]
-
-[app-link-1]: http://itunes.apple.com/app/id594421598
+{% include post_end.md %}
