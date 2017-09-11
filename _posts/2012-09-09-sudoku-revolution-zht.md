@@ -10,7 +10,9 @@ order: 40
 jsarr:
 - start_lightslider.js
 ios_link: http://itunes.apple.com/app/id546630587
+ios_id: 546630587
 and_link: https://play.google.com/store/apps/details?id=com.stanleylam.sudoku.revolution
+and_id: com.stanleylam.sudoku.revolution
 short_desc: >
   「新型數獨」帶給你各種全新類型的數獨。 拼圖數獨, 單雙數獨, 窗口數獨, X數獨, 拼圖X數獨.
 ---

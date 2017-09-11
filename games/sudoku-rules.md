@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sudoku"
-ref: sudoku_revolution
+ref: sudoku_rules
 date:   2012-09-09 12:00:00 +0800
 categories: [ios, android]
 lang: en

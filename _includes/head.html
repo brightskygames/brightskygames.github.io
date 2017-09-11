@@ -3,18 +3,55 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title[page.lang] | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description[page.lang] }}{% endif %}">
-  <meta name="copyright" content="2012 COPYRIGHT (C) Stanley Lam ALL RIGHTS RESERVED.">
-  <meta name="keywords" content="{{ site.keywords[page.lang] }}" />
+  {% capture p_title %}{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title[page.lang] | escape }}{% endif %}{% endcapture %}
+  <title>{{ p_title }}</title>
   
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <!-- [BEGIN] Custom SEO Metadata -->
+  {% capture p_desc %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description[page.lang] }}{% endif %}{% endcapture %}
+  <meta name="author" content="Stanley Lam" >
+  <meta name="designer" content="Stanley Lam" >
+  <meta name="description" content="{{ p_desc }}" >
+  <meta name="copyright" content="2012-2017 COPYRIGHT (C) Stanley Lam ALL RIGHTS RESERVED." >
+  <meta name="keywords" content="{{ site.keywords[page.lang] }}" >
+  
+  {% if page.thumbnail %}
+  <meta property="og:image" content="{{ page.thumbnail | prepend: site.url }}" >
+  {% endif %} 
+  {% capture p_desc_200 %}{% if page.short_desc %}{{ page.short_desc | truncate: 200 }}{% endif %}{% endcapture %}
+  <meta property="og:type" content="article" >
+  <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" >
+  <meta property="og:title" content="{{ p_title }}" >
+  <meta property="og:site_name" content="{{ site.title[page.lang] | escape }}" >
+  <meta property="og:locale" content="{{ page.lang }}" >
+  <meta name="og:description" content="{{ p_desc_200 }}" >
+  
+  <meta property="article:author" content="Stanley Lam" >
+  <meta property="article:published_time" content="{% if page.date %}{{ page.date }}{% endif %}" >
+  <meta property="article:modified_time" content="" >
+  <meta property="article:section" content="web" >
+  <meta property="article:tag" content="stanley lam, logic puzzle, logic, puzzle, ipad game, iphone game, samurai sudoku, kakuro, tridoku, sudoku revolution" >
+
+  <meta name="twitter:card" content="app">
+  <meta name="twitter:site" content="@brightskygames">
+  <meta name="twitter:description" content="{{ p_desc_200 }}">
+  <meta name="twitter:app:name:iphone" content="{{ p_title }}">
+  <meta name="twitter:app:id:iphone" content="{% if page.ios_id %}{{ page.ios_id }}{% endif %}">
+  <meta name="twitter:app:name:ipad" content="{{ p_title }}">
+  <meta name="twitter:app:id:ipad" content="{% if page.ios_id %}{{ page.ios_id }}{% endif %}">
+  <meta name="twitter:app:name:googleplay" content="{{ p_title }}">
+  <meta name="twitter:app:id:googleplay" content="{% if page.and_id %}{{ page.and_id }}{% endif %}">
+
+
+  <!-- [END] Custom SEO Metadata -->
+  
+  
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}{% for post in posts %}
   <link rel="alternate" hreflang="{{ post.lang }}" href="{{ post.url }}" />{% endfor %}
   {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}{% for page in pages %}
   <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url }}" />{% endfor %}
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title[page.lang] }}" href="{{ site.feed[page.lang] | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title[page.lang] }}" href="{{ site.feed[page.lang] | prepend: site.baseurl | prepend: site.url }}" />
   
   {% include analytics.html %}
   
