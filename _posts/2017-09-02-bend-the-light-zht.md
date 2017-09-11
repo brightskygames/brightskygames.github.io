@@ -10,6 +10,7 @@ order: 90
 jsarr:
 - start_lightslider.js
 ios_link: http://itunes.apple.com/app/id1260256282
+ios_id: 1260256282
 short_desc: >
   「反射光線」是一個包含各種光學元件的解謎遊戲
 ---

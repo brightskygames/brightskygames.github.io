@@ -11,6 +11,8 @@ jsarr:
 - start_lightslider.js
 ios_link: http://itunes.apple.com/app/id762133374
 and_link: https://play.google.com/store/apps/details?id=com.stanleylam.sudokumine
+ios_id: 762133374
+and_id: com.stanleylam.sudokumine
 short_desc: >
   Sudoku Mine combines Sudoku puzzle with Minesweeper game.
   The goal is to place three mines in every row, column and region. The digits in the grid represent the number of mines in the neighbouring grids.

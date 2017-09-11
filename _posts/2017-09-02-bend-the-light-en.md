@@ -10,6 +10,7 @@ order: 90
 jsarr:
 - start_lightslider.js
 ios_link: http://itunes.apple.com/app/id1260256282
+ios_id: 1260256282
 short_desc: >
   Bend the Light is a puzzle game of lasers and mirrors. Your goal is to build constructions that deflect beams so they hit desingated targets. It offers levels ranging from easy distractions to hard challenges.
 ---

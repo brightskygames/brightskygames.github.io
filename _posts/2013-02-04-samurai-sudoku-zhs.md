@@ -11,6 +11,8 @@ jsarr:
 - start_lightslider.js
 ios_link: http://itunes.apple.com/app/id594421598
 and_link: https://play.google.com/store/apps/details?id=com.stanleylam.samuraisudoku
+ios_id: 594421598
+and_id: com.stanleylam.samuraisudoku
 short_desc: >
   在9×9格的大九宫格中，有9个3×3格的小九宫格。每个数独里，每个直行，每个横列，每个小方块内都有1到9的数字，且每个数字只出现一次
 ---

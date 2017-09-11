@@ -11,6 +11,8 @@ jsarr:
 - start_lightslider.js
 ios_link: http://itunes.apple.com/app/id991239522
 and_link: https://play.google.com/store/apps/details?id=com.stanleylam.tridoku
+ios_id: 991239522
+and_id: com.stanleylam.tridoku
 short_desc: >
   三角ナンプレとはナンプレの１つのバリエーションです。いくつの条件をすべて満たすように、適切に数字を入れていく数字パズルです。
 ---

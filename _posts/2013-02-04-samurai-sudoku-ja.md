@@ -11,6 +11,8 @@ jsarr:
 - start_lightslider.js
 ios_link: http://itunes.apple.com/app/id594421598
 and_link: https://play.google.com/store/apps/details?id=com.stanleylam.samuraisudoku
+ios_id: 594421598
+and_id: com.stanleylam.samuraisudoku
 short_desc: >
   侍数独は、5つの数独が集まってできたものです。各数独は、各行、各列とも9マスあり、各マスに1～9までの数字がひとつずつ入ります。
 ---

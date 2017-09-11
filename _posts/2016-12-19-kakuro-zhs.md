@@ -10,6 +10,7 @@ order: 2
 jsarr:
 - start_lightslider.js
 ios_link: http://itunes.apple.com/app/id1185788482
+ios_id: 1185788482
 short_desc: >
   被斜线分开的方格中，右上的数字等於其右侧数字之和，左下的数字等於其下方数字之和。
   无论是横向还是纵向，连续方格中的数字不能重复。例如总和是4的两个方格只可是 1 和 3, 不可是 2 和 2

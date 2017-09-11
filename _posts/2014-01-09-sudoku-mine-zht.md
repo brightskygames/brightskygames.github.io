@@ -11,6 +11,8 @@ jsarr:
 - start_lightslider.js
 ios_link: http://itunes.apple.com/app/id762133374
 and_link: https://play.google.com/store/apps/details?id=com.stanleylam.sudokumine
+ios_id: 762133374
+and_id: com.stanleylam.sudokumine
 short_desc: >
   地雷數獨結合了數獨和掃雷遊戲的玩法。在每個行，列，區域找出三個地雷。數字代表在相鄰地區中的地雷的數目。
 ---

@@ -11,6 +11,8 @@ jsarr:
 - start_lightslider.js
 ios_link: http://itunes.apple.com/app/id991239522
 and_link: https://play.google.com/store/apps/details?id=com.stanleylam.tridoku
+ios_id: 991239522
+and_id: com.stanleylam.tridoku
 short_desc: >
   每个大的三角形包含数字1至9。
   内部阴影三角形的每一边都有数字1至9。

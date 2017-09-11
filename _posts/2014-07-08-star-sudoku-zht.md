@@ -11,6 +11,8 @@ jsarr:
 - start_lightslider.js
 ios_link: http://itunes.apple.com/app/id877502433
 and_link: https://play.google.com/store/apps/details?id=com.stanleylam.starsudoku
+ios_id: 877502433
+and_id: com.stanleylam.starsudoku
 short_desc: >
   星星數獨的外觀是一個由六個三角形組成的星形。在空格上填入1到9的數字，令到每一個方向的每一行、每一個區域沒有重複的數字。
 ---

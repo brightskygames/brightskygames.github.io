@@ -11,6 +11,8 @@ jsarr:
 - start_lightslider.js
 ios_link: http://itunes.apple.com/app/id594421598
 and_link: https://play.google.com/store/apps/details?id=com.stanleylam.samuraisudoku
+ios_id: 594421598
+and_id: com.stanleylam.samuraisudoku
 short_desc: >
   Samurai Sudoku puzzle contains five overlapping sudoku grids. The basic sudoku rules apply to each 9 x 9 grid. Free play through hundreds of levels.
 ---

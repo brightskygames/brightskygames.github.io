@@ -11,6 +11,8 @@ jsarr:
 - start_lightslider.js
 ios_link: http://itunes.apple.com/app/id877502433
 and_link: https://play.google.com/store/apps/details?id=com.stanleylam.starsudoku
+ios_id: 877502433
+and_id: com.stanleylam.starsudoku
 short_desc: >
   星ナンプレとはナンプレの１つのバリエーションです。ボードは大きな三角形の6つから構成される。各三角形に1～9の数字が入いる。連続した一行内にも、途中で途切れている一行内にも、重複しないように数字を入れる。
 ---
