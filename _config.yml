@@ -53,7 +53,7 @@ index:
   zh-Hant: index-zht.html
   ja: index-ja.html
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://brightskygames.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: brightskygames
 github_username:  brightskygames
 facebook_username: brightskygames
