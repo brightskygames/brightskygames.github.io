@@ -7,17 +7,17 @@
   <title>{{ p_title }}</title>
   
   <!-- [BEGIN] Custom SEO Metadata -->
+  {% capture p_desc_200 %}{% if page.short_desc %}{{ page.short_desc | truncate: 200 }}{% endif %}{% endcapture %}
   {% capture p_desc %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description[page.lang] }}{% endif %}{% endcapture %}
   <meta name="author" content="Stanley Lam" >
   <meta name="designer" content="Stanley Lam" >
-  <meta name="description" content="{{ p_desc }}" >
+  <meta name="description" content="{% if p_desc_200 %}{{ p_desc_200 }}{% else %}{{ p_desc }}{% endif %}" >
   <meta name="copyright" content="2012-2017 COPYRIGHT (C) Stanley Lam ALL RIGHTS RESERVED." >
   <meta name="keywords" content="{{ site.keywords[page.lang] }}" >
   
   {% if page.thumbnail %}
   <meta property="og:image" content="{{ page.thumbnail | prepend: site.url }}" >
   {% endif %} 
-  {% capture p_desc_200 %}{% if page.short_desc %}{{ page.short_desc | truncate: 200 }}{% endif %}{% endcapture %}
   <meta property="og:type" content="article" >
   <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" >
   <meta property="og:title" content="{{ p_title }}" >
