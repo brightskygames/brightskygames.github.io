@@ -3,6 +3,8 @@ layout: page
 title: 关於
 ref: about
 lang: zh-Hans
+order: 2
+main: 1
 ---
 
 # 关於本网站

@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ref: about
 lang: en
+order: 2
+main: 1
 ---
 
 # About this website

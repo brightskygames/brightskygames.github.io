@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "彎曲光線"
+title:  "反射光線"
 ref: bend_the_light
 date:   2017-09-02 12:00:00 +0800
 thumbnail: /assets/img/bl/screen_01_small.jpg
@@ -11,20 +11,20 @@ jsarr:
 - start_lightslider.js
 ios_link: http://itunes.apple.com/app/id1260256282
 short_desc: >
-  Bend the Light is a puzzle game of lasers and mirrors. Your goal is to build constructions that deflect beams so they hit desingated targets. It offers levels ranging from easy distractions to hard challenges.
+  「反射光線」是一個包含各種光學元件的解謎遊戲
 ---
 
 {:.alignright}
 ![app icon]({{ site.url }}/assets/img/bl/bl-180.png)
 
-Bend the Light is a puzzle game of lasers and mirrors. Your goal is to build constructions that deflect beams so they hit desingated targets. It offers levels ranging from easy distractions to hard challenges.
 
-# Features
-– More than 50 hand-crafted puzzles  
-– A puzzle editor. Build your own levels!  
-– Share your puzzles with other players  
-– Access to other user-made puzzles  
-– Hint function to help you to find the solutions  
+「反射光線」是一個包含各種光學元件的解謎遊戲，這個遊戲中除了反射鏡、三棱鏡等傳統光學元件外，還有一些現實中不一定存在的非常神奇的元件，比如多普勒儀（Doppler），如果紅色光線從一端射入，另一端就會射出綠色光線，類似地，綠色光線會變成藍色，而藍色會變成紅色。又如可移動的光線傳送器（Mobile Teleporter），成對使用時，可以將其中一個接收到的光線傳送到另一個。
+
+如果沒玩過這個遊戲，那就趕快開始吧！
+
+# 特色
+- 超過100個關卡
+- 可自製關卡並與其他玩家分享
 
 {: #lightSlider }
 *   ![ss1]({{ site.url }}/assets/img/bl/bl_iphone_ss_1.png)

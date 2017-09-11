@@ -25,6 +25,11 @@ lang_natural:
   zh-Hans: 简体
   zh-Hant: 繁體
   ja: 日本語
+lang_ext:
+  en:
+  zh-Hans: -zhs
+  zh-Hant: -zht
+  ja: -ja
 email: brightskygames@me.com
 description: 
   en: > # this means to ignore newlines

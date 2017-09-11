@@ -3,6 +3,8 @@ layout: page
 title: 關於
 ref: about
 lang: zh-Hant
+order: 2
+main: 1
 ---
 
 # 關於本網站

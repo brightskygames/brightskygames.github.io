@@ -13,14 +13,18 @@
         </svg>
       </a>
 
-      <div class="trigger">
-        {% assign pages=site.pages | where:"lang", page.lang %}
+      {% assign url_parts = page.url | split: '/' %}
+      <ul class="nav-list">
+        {% assign pages=site.pages | where:"lang", page.lang | sort: 'order' %}
         {% for my_page in pages %}
-          {% if my_page.title %}
+          {% if my_page.title and my_page.main %}
+          <li {% if url_parts[1] contains my_page.ref %} class="active" {% endif %}>
           <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
           {% endif %}
+          </li>
         {% endfor %}
-      </div>
+      </ul>
+      
     </nav>
 
   </div>

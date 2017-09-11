@@ -3,6 +3,8 @@ layout: page
 title: 概要
 ref: about
 lang: ja
+order: 2
+main: 1
 ---
 
 # このウェブサイトについて

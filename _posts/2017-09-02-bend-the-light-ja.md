@@ -11,7 +11,7 @@ jsarr:
 - start_lightslider.js
 ios_link: http://itunes.apple.com/app/id1260256282
 short_desc: >
-  Bend the Light is a puzzle game of lasers and mirrors. Your goal is to build constructions that deflect beams so they hit desingated targets. It offers levels ranging from easy distractions to hard challenges.
+  光を曲げろとは、レーザーと鏡などのものを使うパズルゲームです。
 ---
 
 {:.alignright}
@@ -19,15 +19,14 @@ short_desc: >
 
 光を曲げろとは、レーザーと鏡などのものを使うパズルゲームです。
 
+君の役目はピンホイールに同じ色のレーザーを当てることだ！
 
-Bend the Light is a puzzle game of lasers and mirrors. Your goal is to build constructions that deflect beams so they hit desingated targets. It offers levels ranging from easy distractions to hard challenges.
+放たれるレーザーをピンホイールにあてるには鏡が必要だ。ステージに用意された鏡を調節して任務を完了せよ。
+  
+異なる色のレーザーは交差させてはダメだ。
 
-# Features
-– More than 50 hand-crafted puzzles  
-– A puzzle editor. Build your own levels!  
-– Share your puzzles with other players  
-– Access to other user-made puzzles  
-– Hint function to help you to find the solutions  
+ステージに置かれた鏡の数が解決の糸口になるぞ。
+
 
 {: #lightSlider }
 *   ![ss1]({{ site.url }}/assets/img/bl/bl_iphone_ss_1.png)
