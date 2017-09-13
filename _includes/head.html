@@ -40,7 +40,11 @@
   <meta name="twitter:app:id:ipad" content="{% if page.ios_id %}{{ page.ios_id }}{% endif %}">
   <meta name="twitter:app:name:googleplay" content="{{ p_title }}">
   <meta name="twitter:app:id:googleplay" content="{% if page.and_id %}{{ page.and_id }}{% endif %}">
-
+  
+  {% assign arApps = site.mobile_app | where: "ref", page.ref %}
+  {% if arApps.size > 0 %}
+  <meta property="fb:app_id" content="{{ arApps[0].fb_app_id }}" >
+  {% endif %}
 
   <!-- [END] Custom SEO Metadata -->
   
