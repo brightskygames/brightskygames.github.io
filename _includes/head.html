@@ -41,9 +41,9 @@
   <meta name="twitter:app:id:iphone" content="{% if page.ios_id %}{{ page.ios_id }}{% endif %}">
   <meta name="twitter:app:id:ipad" content="{% if page.ios_id %}{{ page.ios_id }}{% endif %}">
   <meta name="twitter:app:id:googleplay" content="{% if page.and_id %}{{ page.and_id }}{% endif %}">
-  <meta name="twitter:app:url:iphone" content="">
-  <meta name="twitter:app:url:ipad" content="">
-  <meta name="twitter:app:url:googleplay" content="">
+  <meta name="twitter:app:url:iphone" content="{% if page.ios_link %}{{ page.ios_link }}{% endif %}">
+  <meta name="twitter:app:url:ipad" content="{% if page.ios_link %}{{ page.ios_link }}{% endif %}">
+  <meta name="twitter:app:url:googleplay" content="{% if page.and_link %}{{ page.and_link }}{% endif %}">
   
   {% assign arApps = site.mobile_app | where: "ref", page.ref %}
   {% if arApps.size > 0 %}
