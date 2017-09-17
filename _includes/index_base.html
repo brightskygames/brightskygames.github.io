@@ -1,27 +1,34 @@
 <table style="width:100%">
 {% assign posts=site.posts | where:"lang", page.lang | sort: 'order', 'last' %}
 {% for post in posts %}
+  {% assign arApps = site.mobile_app | where: "ref", post.ref %}
+  
+  {% if arApps.size > 0 %}{% assign app = arApps[0] %}
+  {% endif %}
 <tr>
 <td style="width:35%">
-  {% if post.thumbnail %}
+  {% if app.thumbnail %}
     <div style="float: left; display: inline-block; margin-right: 30px; margin-bottom: 10px">
-        <a href="{{ post.url }}" ><img style="max-height: 100%; max-width: 100%" src="{{ post.thumbnail | prepend: site.url }}" alt="thumbnail"  />
+        <a href="{{ post.url }}" ><img style="max-height: 100%; max-width: 100%" src="{{ app.thumbnail | prepend: site.url }}" alt="thumbnail"  />
     </div>
   {% endif %}
 </td>
 <td style="width:65%">
+  <!-- post.title  app.title[page.lang] -->
   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
   <p class="post-subtitle">{{ post.short_desc }}</p>
-  {% if post.categories contains 'ios' %}
-    <p><a href="{{ post.ios_link }}" >
-      <img src="{{ site.url }}/assets/img/dl_app_store_badge_135x40.png" alt="Download on the AppStore" title="Download on the AppStore" />
-    </a></p>
+  
+  {% if app.categories contains 'ios' %}
+	<p><a href="{{ app.ios_link }}" >
+	  <img src="{{ site.url }}/assets/img/dl_app_store_badge_135x40.png" alt="Download on the AppStore" title="Download on the AppStore" />
+	</a></p>
   {% endif %}
-  {% if post.categories contains 'android' %}
-    <p><a href="{{ post.and_link }}">
-      <img src="{{ site.url }}/assets/img/google_play_badge.png" alt="Get it on Google Play" title="Get it on Google Play" />
-    </a></p>
+  {% if app.categories contains 'android' %}
+	<p><a href="{{ app.and_link }}">
+	  <img src="{{ site.url }}/assets/img/google_play_badge.png" alt="Get it on Google Play" title="Get it on Google Play" />
+	</a></p>
   {% endif %}
+  
 </td>
 </tr>
 {% endfor %}

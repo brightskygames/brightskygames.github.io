@@ -3,16 +3,10 @@ layout: post
 title:  "地雷數獨"
 ref: sudoku_mine
 date:   2014-01-09 12:00:00 +0800
-thumbnail: /assets/img/sm/screen_01.jpg
-categories: [ios, android]
 lang: zh-Hant
 order: 90
 jsarr:
 - start_lightslider.js
-ios_link: http://itunes.apple.com/app/id762133374
-and_link: https://play.google.com/store/apps/details?id=com.stanleylam.sudokumine
-ios_id: 762133374
-and_id: com.stanleylam.sudokumine
 short_desc: >
   地雷數獨結合了數獨和掃雷遊戲的玩法。在每個行，列，區域找出三個地雷。數字代表在相鄰地區中的地雷的數目。
 ---

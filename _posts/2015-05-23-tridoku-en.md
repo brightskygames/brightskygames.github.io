@@ -3,16 +3,10 @@ layout: post
 title:  "Tridoku"
 ref: tridoku
 date:   2015-05-23 12:00:00 +0800
-thumbnail: /assets/img/tri/screen_01.jpg
-categories: [ios, android]
 lang: en
 order: 1
 jsarr:
 - start_lightslider.js
-ios_link: http://itunes.apple.com/app/id991239522
-and_link: https://play.google.com/store/apps/details?id=com.stanleylam.tridoku
-ios_id: 991239522
-and_id: com.stanleylam.tridoku
 short_desc: >
   The numbers 1 to 9 must be placed into each large triange.
   Each of the extra 'legs' of the shaded triangle must contains numbers 1 to 9.

@@ -3,16 +3,10 @@ layout: post
 title:  "三角ナンプレ"
 ref: tridoku
 date:   2015-05-23 12:00:00 +0800
-thumbnail: /assets/img/tri/screen_01.jpg
-categories: [ios, android]
 lang: ja
 order: 1
 jsarr:
 - start_lightslider.js
-ios_link: http://itunes.apple.com/app/id991239522
-and_link: https://play.google.com/store/apps/details?id=com.stanleylam.tridoku
-ios_id: 991239522
-and_id: com.stanleylam.tridoku
 short_desc: >
   三角ナンプレとはナンプレの１つのバリエーションです。いくつの条件をすべて満たすように、適切に数字を入れていく数字パズルです。
 ---

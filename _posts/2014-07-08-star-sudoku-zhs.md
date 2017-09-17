@@ -3,16 +3,10 @@ layout: post
 title:  "星星数独"
 ref: star_sudoku
 date:   2014-07-08 12:00:00 +0800
-thumbnail: /assets/img/star/screen_01.jpg
-categories: [ios, android]
 lang: zh-Hans
 order: 5
 jsarr:
 - start_lightslider.js
-ios_link: http://itunes.apple.com/app/id877502433
-and_link: https://play.google.com/store/apps/details?id=com.stanleylam.starsudoku
-ios_id: 877502433
-and_id: com.stanleylam.starsudoku
 short_desc: >
   星星数独的外观是一个由六个三角形组成的星形。在空格上填入1到9的数字，令到每一个方向的每一行丶每一个区域没有重复的数字。
 ---

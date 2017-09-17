@@ -2,15 +2,11 @@
 layout: post
 title:  "光を曲げろ"
 ref: bend_the_light
-date:   2017-09-02 12:00:00 +0800
-thumbnail: /assets/img/bl/screen_01_small.jpg
 categories: ios
 lang: ja
 order: 90
 jsarr:
 - start_lightslider.js
-ios_link: http://itunes.apple.com/app/id1260256282
-ios_id: 1260256282
 short_desc: >
   光を曲げろとは、レーザーと鏡などのものを使うパズルゲームです。
 ---

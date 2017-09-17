@@ -3,16 +3,10 @@ layout: post
 title:  "三角數獨"
 ref: tridoku
 date:   2015-05-23 12:00:00 +0800
-thumbnail: /assets/img/tri/screen_01.jpg
-categories: [ios, android]
 lang: zh-Hant
 order: 1
 jsarr:
 - start_lightslider.js
-ios_link: http://itunes.apple.com/app/id991239522
-and_link: https://play.google.com/store/apps/details?id=com.stanleylam.tridoku
-ios_id: 991239522
-and_id: com.stanleylam.tridoku
 short_desc: >
   每個大的三角形包含數字1至9。
   內部陰影三角形的每一邊都有數字1至9。

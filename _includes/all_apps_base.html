@@ -1,0 +1,57 @@
+<h1>Mobile Apps</h1>
+
+<table style="width:100%">
+  
+  {% assign apps = site.mobile_app | sort: 'ref' %}
+  {% for app in apps %}
+  {% if app.categories contains 'ios' or app.categories contains 'and' %}
+  <tr>
+    <td>
+	<img src="{{ site.url }}{{ app.icon }}" alt="{{ app.title[page.lang] }}" title="{{ app.title[page.lang] }}" style="width:60px;height:60px;">
+	</td>
+	<td>
+	<p>{{ app.title[page.lang] }}</p>
+	</td>
+	<td>
+	{% if app.ios_link %}
+	<a href="{{ app.ios_link }}" onclick="ga('send', 'event', 'Link', 'click', '{{ app.ref }}_i');">
+	  <img src="{{ site.url }}/assets/img/dl_app_store_badge_135x40.png" alt="Download on the AppStore" title="Download on the AppStore">
+	</a>
+	{% endif %}
+	{% if app.and_link %}
+	<a href="{{ app.and_link }}" onclick="ga('send', 'event', 'Link', 'click', '{{ app.ref }}_a');">
+	  <img src="{{ site.url }}/assets/img/google_play_badge.png" alt="Get it on Google Play">
+	</a>
+	{% endif %}
+	</td>
+  </tr>
+  {% endif %}
+  {% endfor %}
+</table>
+
+
+<h1>Mac Apps</h1>
+
+<table style="width:100%">
+  
+  {% assign apps = site.mobile_app | sort: 'ref' %}
+  {% for app in apps %}
+  {% if app.categories contains 'mac' %}
+  <tr>
+    <td>
+	<img src="{{ site.url }}{{ app.icon }}" alt="{{ app.title[page.lang] }}" title="{{ app.title[page.lang] }}" style="width:60px;height:60px;">
+	</td>
+	<td>
+	<p>{{ app.title[page.lang] }}</p>
+	</td>
+	<td>
+	{% if app.ios_link %}
+	<a href="{{ app.ios_link }}" onclick="ga('send', 'event', 'Link', 'click', '{{ app.ref }}_i');">
+	  <img src="{{ site.url }}/assets/img/dl_app_store_badge_135x40.png" alt="Download on the AppStore" title="Download on the AppStore">
+	</a>
+	{% endif %}
+	</td>
+  </tr>
+  {% endif %}
+  {% endfor %}
+</table>

@@ -3,7 +3,7 @@ layout: page
 title: 關於
 ref: about
 lang: zh-Hant
-order: 2
+order: 10
 main: 1
 ---
 

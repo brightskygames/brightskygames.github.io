@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ref: about
 lang: en
-order: 2
+order: 10
 main: 1
 ---
 

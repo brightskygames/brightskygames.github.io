@@ -3,14 +3,10 @@ layout: post
 title:  "數和"
 ref: kakuro
 date:   2016-12-19 12:00:00 +0800
-thumbnail: /assets/img/kkr/screen_01_small.jpg
-categories: ios
 lang: zh-Hant
 order: 2
 jsarr:
 - start_lightslider.js
-ios_link: http://itunes.apple.com/app/id1185788482
-ios_id: 1185788482
 short_desc: >
   被斜線分開的方格中，右上的數字等於其右側數字之和，左下的數字等於其下方數字之和。
   無論是橫向還是縱向，連續方格中的數字不能重複。例如總和是4的兩個方格只可是 1 和 3, 不可是 2 和 2

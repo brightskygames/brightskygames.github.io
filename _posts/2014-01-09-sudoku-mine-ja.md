@@ -3,16 +3,10 @@ layout: post
 title:  "ナンプレマイン"
 ref: sudoku_mine
 date:   2014-01-09 12:00:00 +0800
-thumbnail: /assets/img/sm/screen_01.jpg
-categories: [ios, android]
 lang: ja
 order: 90
 jsarr:
 - start_lightslider.js
-ios_link: http://itunes.apple.com/app/id762133374
-and_link: https://play.google.com/store/apps/details?id=com.stanleylam.sudokumine
-ios_id: 762133374
-and_id: com.stanleylam.sudokumine
 short_desc: >
   ナンプレマインとは、ナンプレとマインスイーパを組み合わせたものです。ゴールはすべての行、列、ブロックで３つのマインを見つけることです。数字は隣接セル内の地雷の数を表しています。
 ---

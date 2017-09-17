@@ -3,7 +3,7 @@ layout: page
 title: 关於
 ref: about
 lang: zh-Hans
-order: 2
+order: 10
 main: 1
 ---
 
