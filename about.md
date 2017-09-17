@@ -6,6 +6,7 @@ ref: about
 lang: en
 order: 10
 main: 1
+short_desc: Since its debut in 2012 Bright Sky Games has been continuously offering the most advanced logic puzzling experience available in App Store and Google Play.
 ---
 
 # About this website
