@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "三角數獨"
+meta_title: "三角數獨 for iOS, Android - The Triangular Sudoku Puzzle Variant"
 ref: tridoku
 date:   2015-05-23 12:00:00 +0800
 lang: zh-Hant

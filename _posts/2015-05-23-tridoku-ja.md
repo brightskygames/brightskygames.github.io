@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "三角ナンプレ"
+meta_title: "三角ナンプレ for iOS, Android - The Triangular Sudoku Puzzle Variant"
 ref: tridoku
 date:   2015-05-23 12:00:00 +0800
 lang: ja

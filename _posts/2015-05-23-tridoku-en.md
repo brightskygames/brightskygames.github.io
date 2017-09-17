@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Tridoku"
+meta_title: "Tridoku for iOS, Android - The Triangular Sudoku Puzzle Variant"
 ref: tridoku
 date:   2015-05-23 12:00:00 +0800
 lang: en
@@ -8,9 +9,8 @@ order: 1
 jsarr:
 - start_lightslider.js
 short_desc: >
-  The numbers 1 to 9 must be placed into each large triange.
-  Each of the extra 'legs' of the shaded triangle must contains numbers 1 to 9.
-  No two neighboring (touching) cells may contain the same numbers.
+  The same logic that is used to solve Sudoku puzzles can be applied to Tridoku, 
+  but the different rules make Tridoku a new and refreshing challenge.
 ---
 
 {:.alignright}
