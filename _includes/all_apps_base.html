@@ -4,7 +4,7 @@
   
   {% assign apps = site.mobile_app | sort: 'ref' %}
   {% for app in apps %}
-  {% if app.categories contains 'ios' or app.categories contains 'and' %}
+  {% if app.categories contains 'ios' or app.categories contains 'android' %}
   <tr>
     <td>
 	<img src="{{ site.url }}{{ app.icon }}" alt="{{ app.title[page.lang] }}" title="{{ app.title[page.lang] }}" style="width:60px;height:60px;">
