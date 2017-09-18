@@ -2,6 +2,7 @@
 layout: post
 title:  "武士數獨"
 ref: samurai_sudoku
+categories: [ios, android]
 date:   2013-02-04 12:00:00 +0800
 lang: zh-Hant
 order: 10

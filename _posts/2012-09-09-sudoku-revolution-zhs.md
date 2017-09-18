@@ -3,6 +3,7 @@ layout: post
 title:  "新型数独"
 ref: sudoku_revolution
 date:   2012-09-09 12:00:00 +0800
+categories: [ios, android]
 lang: zh-Hans
 order: 40
 jsarr:

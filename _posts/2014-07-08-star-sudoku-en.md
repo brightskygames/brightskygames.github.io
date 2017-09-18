@@ -3,6 +3,7 @@ layout: post
 title:  "Star Sudoku"
 ref: star_sudoku
 date:   2014-07-08 12:00:00 +0800
+categories: [ios, android]
 lang: en
 order: 5
 jsarr:

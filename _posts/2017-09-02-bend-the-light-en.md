@@ -3,6 +3,7 @@ layout: post
 title:  "Bend the Light"
 ref: bend_the_light
 date:   2017-09-02 12:00:00 +0800
+categories: ios
 lang: en
 order: 90
 jsarr:

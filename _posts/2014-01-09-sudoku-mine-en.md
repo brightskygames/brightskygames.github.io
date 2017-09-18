@@ -4,6 +4,7 @@ title:  "Sudoku Mine"
 ref: sudoku_mine
 date:   2014-01-09 12:00:00 +0800
 lang: en
+categories: [ios, android]
 order: 90
 jsarr:
 - start_lightslider.js

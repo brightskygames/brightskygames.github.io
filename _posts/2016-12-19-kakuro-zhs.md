@@ -3,6 +3,7 @@ layout: post
 title:  "数和"
 ref: kakuro
 date:   2016-12-19 12:00:00 +0800
+categories: ios
 lang: zh-Hans
 order: 2
 jsarr:

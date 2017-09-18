@@ -2,6 +2,7 @@
 layout: post
 title:  "Samurai Sudoku"
 ref: samurai_sudoku
+categories: [ios, android]
 date:   2013-02-04 12:00:00 +0800
 lang: en
 order: 10

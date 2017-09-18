@@ -3,6 +3,7 @@ layout: post
 title:  "星星数独"
 ref: star_sudoku
 date:   2014-07-08 12:00:00 +0800
+categories: [ios, android]
 lang: zh-Hans
 order: 5
 jsarr:

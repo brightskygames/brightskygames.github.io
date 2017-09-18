@@ -3,6 +3,7 @@ layout: post
 title:  "ナンプレマイン"
 ref: sudoku_mine
 date:   2014-01-09 12:00:00 +0800
+categories: [ios, android]
 lang: ja
 order: 90
 jsarr:
