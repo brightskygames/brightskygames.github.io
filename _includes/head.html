@@ -42,19 +42,17 @@
   <meta name="twitter:site" content="@brightskygames">
   <meta name="twitter:description" content="{{ p_desc_200 }}">
   <meta name="twitter:app:country" content="US">
-  <meta name="twitter:app:name:iphone" content="{{ p_title }}">
-  <meta name="twitter:app:name:ipad" content="{{ p_title }}">
-  <meta name="twitter:app:name:googleplay" content="{{ p_title }}">
-  <meta name="twitter:app:id:iphone" content="{% if app.ios_id %}{{ app.ios_id }}{% endif %}">
-  <meta name="twitter:app:id:ipad" content="{% if app.ios_id %}{{ app.ios_id }}{% endif %}">
-  <meta name="twitter:app:id:googleplay" content="{% if app.and_id %}{{ app.and_id }}{% endif %}">
-  <meta name="twitter:app:url:iphone" content="{% if app.ios_link %}{{ app.ios_link }}{% endif %}">
-  <meta name="twitter:app:url:ipad" content="{% if app.ios_link %}{{ app.ios_link }}{% endif %}">
-  <meta name="twitter:app:url:googleplay" content="{% if app.and_link %}{{ app.and_link }}{% endif %}">
+  {% if app.ios_id %}<meta name="twitter:app:name:iphone" content="{{ p_title }}">{% endif %}
+  {% if app.ios_id %}<meta name="twitter:app:name:ipad" content="{{ p_title }}}">{% endif %}
+  {% if app.and_id %}<meta name="twitter:app:name:googleplay" content="{{ p_title }}">{% endif %}
+  {% if app.ios_id %}<meta name="twitter:app:id:iphone" content="{{ app.ios_id }}">{% endif %}
+  {% if app.ios_id %}<meta name="twitter:app:id:ipad" content="{{ app.ios_id }}">{% endif %}
+  {% if app.and_id %}<meta name="twitter:app:id:googleplay" content="{{ app.and_id }}">{% endif %}
+  {% if app.ios_id %}<meta name="twitter:app:url:iphone" content="{{ app.ios_link }}">{% endif %}
+  {% if app.ios_id %}<meta name="twitter:app:url:ipad" content="{{ app.ios_link }}">{% endif %}
+  {% if app.and_id %}<meta name="twitter:app:url:googleplay" content="{{ app.and_link }}">{% endif %}
   
-  {% if app %}
-  <meta property="fb:app_id" content="{{ app.fb_app_id }}" >
-  {% endif %}
+  {% if app.fb_app_id %}<meta property="fb:app_id" content="{{ app.fb_app_id }}" >{% endif %}
 
   <!-- [END] Custom SEO Metadata -->
   
