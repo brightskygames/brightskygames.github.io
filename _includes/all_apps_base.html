@@ -5,13 +5,17 @@
   {% assign apps = site.mobile_app | sort: 'ref' %}
   {% for app in apps %}
   {% if app.categories contains 'ios' or app.categories contains 'android' %}
+  {% assign posts=site.posts | where:"lang", page.lang | where: "ref", app.ref %}
+  {% if posts.size > 0 %}{% assign post = posts[0] %}{% else %}{% assign post = nil %}{% endif %}
   <tr>
     <td>
 	<img src="{{ site.url }}{{ app.icon }}" alt="{{ app.title[page.lang] }}" title="{{ app.title[page.lang] }}" style="width:60px;height:60px;">
 	</td>
-	<td>
-	<p>{{ app.title[page.lang] }}</p>
-	</td>
+	<td><p>
+    {% if post %}<a href="{{ post.url | prepend: site.baseurl }}">{% endif %}
+	{{ app.title[page.lang] }}
+	{% if post %}</a>{% endif %}
+	</p></td>
 	<td>
 	{% if app.ios_link %}
 	<a href="{{ app.ios_link }}" onclick="ga('send', 'event', 'Link', 'click', '{{ app.ref }}_i');">

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Star Sudoku"
+meta_title: "Star Sudoku for iOS, Android - 6 triangles challenge"
 ref: star_sudoku
 date:   2014-07-08 12:00:00 +0800
 categories: [ios, android]

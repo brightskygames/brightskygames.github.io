@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "新型ナンプレ"
+title:  "新型数独(ナンプレ)"
+meta_title: "新型数独(ナンプレ) for iOS, Android - hyper, even odd, diagonal and more"
 ref: sudoku_revolution
 date:   2012-09-09 12:00:00 +0800
 categories: [ios, android]

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "地雷數獨"
+meta_title: "地雷數獨 for iOS, Android - minesweeper mix classic puzzle"
 ref: sudoku_mine
 date:   2014-01-09 12:00:00 +0800
 categories: [ios, android]

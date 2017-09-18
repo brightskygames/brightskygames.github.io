@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "ナンプレマイン"
+title:  "数独(ナンプレ)マイン"
+meta_title: "数独(ナンプレ)マイン for iOS, Android - minesweeper mix classic puzzle"
 ref: sudoku_mine
 date:   2014-01-09 12:00:00 +0800
 categories: [ios, android]

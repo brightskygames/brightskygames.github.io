@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "侍数独"
+title:  "サムライ数独(ナンプレ)"
+meta_title: "サムライ数独(ナンプレ) for iOS, Android - ものすっごい難しい数独"
 ref: samurai_sudoku
 categories: [ios, android]
 date:   2013-02-04 12:00:00 +0800

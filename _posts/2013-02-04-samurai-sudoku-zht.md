@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "武士數獨"
+meta_title: "武士數獨 for iOS, Android - a variant of regular Sudoku puzzles"
 ref: samurai_sudoku
 categories: [ios, android]
 date:   2013-02-04 12:00:00 +0800

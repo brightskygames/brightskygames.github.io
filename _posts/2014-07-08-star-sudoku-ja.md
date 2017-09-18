@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "星ナンプレ"
+title:  "星数独(ナンプレ)"
+meta_title: "星数独(ナンプレ) for iOS, Android - 6 triangles challenge"
 ref: star_sudoku
 date:   2014-07-08 12:00:00 +0800
 categories: [ios, android]

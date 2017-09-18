@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Samurai Sudoku"
+meta_title: "Samurai Sudoku for iOS, Android - a variant of regular Sudoku puzzles"
 ref: samurai_sudoku
 categories: [ios, android]
 date:   2013-02-04 12:00:00 +0800

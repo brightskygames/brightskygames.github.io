@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "星星数独"
+meta_title: "星星数独 for iOS, Android - 6 triangles challenge"
 ref: star_sudoku
 date:   2014-07-08 12:00:00 +0800
 categories: [ios, android]

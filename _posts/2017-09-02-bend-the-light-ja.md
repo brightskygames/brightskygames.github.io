@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "光を曲げろ"
+meta_title: "光を曲げろ for iOS - with custom levels"
 ref: bend_the_light
 categories: ios
 lang: ja

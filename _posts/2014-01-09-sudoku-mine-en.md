@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Sudoku Mine"
+meta_title: "Sudoku Mine for iOS, Android - minesweeper mix classic puzzle"
 ref: sudoku_mine
 date:   2014-01-09 12:00:00 +0800
 lang: en
