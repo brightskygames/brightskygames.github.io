@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "數和"
+meta_title: "數和遊戲 for iOS - Cross Sums Logic Puzzle"
 ref: kakuro
 date:   2016-12-19 12:00:00 +0800
 categories: ios
