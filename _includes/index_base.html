@@ -1,6 +1,7 @@
 <table style="width:100%">
 {% assign posts=site.posts | where:"lang", page.lang | sort: 'order', 'last' %}
 {% for post in posts %}
+  {% unless post.order %}{% continue %}{% endunless %}
   {% assign arApps = site.mobile_app | where: "ref", post.ref %}
   
   {% if arApps.size > 0 %}{% assign app = arApps[0] %}
