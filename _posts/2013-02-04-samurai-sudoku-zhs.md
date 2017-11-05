@@ -6,7 +6,7 @@ ref: samurai_sudoku
 categories: [ios, android]
 date:   2013-02-04 12:00:00 +0800
 lang: zh-Hans
-order: 10
+order: 1
 jsarr:
 - start_lightslider.js
 short_desc: >

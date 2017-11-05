@@ -6,7 +6,7 @@ ref: tridoku
 date:   2015-05-23 12:00:00 +0800
 categories: [ios, android]
 lang: ja
-order: 1
+order: 10
 jsarr:
 - start_lightslider.js
 short_desc: >
