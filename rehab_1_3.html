@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hip Fracture Rehab & LOS Predictor with 95% CI</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+        .card-full {
+            grid-column: span 2;
+        }
+        h1 {
+            color: #667eea;
+            margin-top: 0;
+            font-size: 24px;
+        }
+        h2 {
+            color: #764ba2;
+            font-size: 18px;
+            margin-top: 0;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: border 0.3s;
+        }
+        input:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        .result-box {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .result-item:last-child {
+            border-bottom: none;
+        }
+        .result-label {
+            font-weight: 600;
+            color: #555;
+        }
+        .result-value {
+            font-weight: 700;
+            color: #667eea;
+            font-size: 18px;
+        }
+        .ci-text {
+            font-size: 12px;
+            color: #888;
+            margin-left: 10px;
+            font-weight: normal;
+        }
+        .badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .badge-high { background: #d4edda; color: #155724; }
+        .badge-moderate { background: #fff3cd; color: #856404; }
+        .badge-low { background: #f8d7da; color: #721c24; }
+        .badge-verylow { background: #e2e3e5; color: #383d41; }
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #5a67d8;
+        }
+        .note {
+            font-size: 12px;
+            color: #888;
+            margin-top: 15px;
+            text-align: center;
+        }
+        .confidence-note {
+            background: #e8f4f8;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-size: 12px;
+            color: #2c5282;
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .card-full {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>🏥 Hip Fracture Predictor</h1>
+            <h2>Patient Input</h2>
+            
+            <div class="input-group">
+                <label>📊 MOCA Score (0-30)</label>
+                <input type="number" id="moca" min="0" max="30" value="22" step="1">
+            </div>
+            
+            <div class="input-group">
+                <label>🥚 Albumin (g/L)</label>
+                <input type="number" id="albumin" min="10" max="50" value="35" step="1">
+            </div>
+            
+            <div class="input-group">
+                <label>📋 Comorbidity Count</label>
+                <input type="number" id="comorbidities" min="0" max="10" value="2" step="1">
+            </div>
+            
+            <div class="input-group">
+                <label>⏰ Time to Surgery (days)</label>
+                <input type="number" id="tts" min="0" max="20" step="0.5" value="3">
+            </div>
+            
+            <button onclick="calculate()">Calculate Predictions</button>
+        </div>
+        
+        <div class="card">
+            <h1>📈 Prediction Results</h1>
+            <div id="results">
+                <div class="result-box">
+                    <div class="result-item">
+                        <span class="result-label">🎯 Rehab Potential Score:</span>
+                        <span class="result-value" id="rehabScore">-</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">📊 Risk Group:</span>
+                        <span class="result-value" id="riskGroup">-</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">✅ Probability of Good Rehab (>20 pt improvement):</span>
+                        <span class="result-value" id="probability">-</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">📈 Predicted Barthel Improvement:</span>
+                        <span class="result-value" id="barthelChange">-</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">🏥 Predicted Length of Stay:</span>
+                        <span class="result-value" id="los">-</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card card-full">
+            <h1>📋 Clinical Prediction Rule with 95% Confidence Intervals</h1>
+            <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+                <tr style="background: #667eea; color: white;">
+                    <th style="padding: 10px; text-align: left;">Predictor</th>
+                    <th style="padding: 10px; text-align: left;">Category</th>
+                    <th style="padding: 10px; text-align: left;">Rehab Points</th>
+                    <th style="padding: 10px; text-align: left;">LOS Points</th>
+                </tr>
+                <tr style="border-bottom: 1px solid #e0e0e0;">
+                    <td rowspan="3" style="padding: 10px;">MOCA</td>
+                    <td style="padding: 10px;">≥19</td>
+                    <td style="padding: 10px;">4</td>
+                    <td style="padding: 10px;">0</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e0e0e0;">
+                    <td style="padding: 10px;">10–18</td>
+                    <td style="padding: 10px;">2</td>
+                    <td style="padding: 10px;">+1</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e0e0e0;">
+                    <td style="padding: 10px;">&lt;10</td>
+                    <td style="padding: 10px;">0</td>
+                    <td style="padding: 10px;">+2</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e0e0e0;">
+                    <td rowspan="3" style="padding: 10px;">Albumin</td>
+                    <td style="padding: 10px;">≥35</td>
+                    <td style="padding: 10px;">4</td>
+                    <td style="padding: 10px;">0</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e0e0e0;">
+                    <td style="padding: 10px;">30–34</td>
+                    <td style="padding: 10px;">2</td>
+                    <td style="padding: 10px;">+1</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e0e0e0;">
+                    <td style="padding: 10px;">&lt;30</td>
+                    <td style="padding: 10px;">0</td>
+                    <td style="padding: 10px;">+2</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e0e0e0;">
+                    <td rowspan="3" style="padding: 10px;">Comorbidities</td>
+                    <td style="padding: 10px;">0–1</td>
+                    <td style="padding: 10px;">3</td>
+                    <td style="padding: 10px;">0</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e0e0e0;">
+                    <td style="padding: 10px;">2–3</td>
+                    <td style="padding: 10px;">1</td>
+                    <td style="padding: 10px;">+1</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e0e0e0;">
+                    <td style="padding: 10px;">≥4</td>
+                    <td style="padding: 10px;">0</td>
+                    <td style="padding: 10px;">+2</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e0e0e0;">
+                    <td rowspan="3" style="padding: 10px;">Time to Surgery</td>
+                    <td style="padding: 10px;">≤2 days</td>
+                    <td style="padding: 10px;">-</td>
+                    <td style="padding: 10px;">0</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e0e0e0;">
+                    <td style="padding: 10px;">3–5 days</td>
+                    <td style="padding: 10px;">-</td>
+                    <td style="padding: 10px;">+1</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e0e0e0;">
+                    <td style="padding: 10px;">&gt;5 days</td>
+                    <td style="padding: 10px;">-</td>
+                    <td style="padding: 10px;">+2</td>
+                </tr>
+            </table>
+            
+            <h3>📊 Rehab Score Interpretation (95% CI)</h3>
+            <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 14px;">
+                <tr style="background: #e0e0e0;">
+                    <th style="padding: 8px; text-align: left;">Score</th>
+                    <th style="padding: 8px; text-align: left;">Risk Group</th>
+                    <th style="padding: 8px; text-align: left;">Probability of Good Rehab (95% CI)</th>
+                </tr>
+                <tr><td style="padding: 8px;">9–11</td><td style="padding: 8px;">High</td><td style="padding: 8px;">88% – 95% (72–99%)</td></tr>
+                <tr><td style="padding: 8px;">6–8</td><td style="padding: 8px;">Moderate</td><td style="padding: 8px;">60% – 75% (42–87%)</td></tr>
+                <tr><td style="padding: 8px;">3–5</td><td style="padding: 8px;">Low</td><td style="padding: 8px;">25% – 45% (12–63%)</td></tr>
+                <tr><td style="padding: 8px;">0–2</td><td style="padding: 8px;">Very Low</td><td style="padding: 8px;">5% – 12% (1–30%)</td></tr>
+            </table>
+            
+            <h3>🏥 LOS Score Interpretation (95% CI)</h3>
+            <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 14px;">
+                <tr style="background: #e0e0e0;">
+                    <th style="padding: 8px; text-align: left;">LOS Score</th>
+                    <th style="padding: 8px; text-align: left;">Predicted LOS (days)</th>
+                    <th style="padding: 8px; text-align: left;">95% Confidence Interval</th>
+                </tr>
+                <tr><td style="padding: 8px;">0–1</td><td style="padding: 8px;">18–20</td><td style="padding: 8px;">14 – 24</td></tr>
+                <tr><td style="padding: 8px;">2–3</td><td style="padding: 8px;">24–26</td><td style="padding: 8px;">19 – 31</td></tr>
+                <tr><td style="padding: 8px;">4–5</td><td style="padding: 8px;">30–33</td><td style="padding: 8px;">24 – 39</td></tr>
+                <tr><td style="padding: 8px;">6–8</td><td style="padding: 8px;">38–43</td><td style="padding: 8px;">30 – 53</td></tr>
+            </table>
+            
+            <div class="confidence-note">
+                <strong>📐 About the 95% Confidence Intervals:</strong><br>
+                These intervals mean that if you were to use this prediction rule on 100 similar patients, the true outcome would fall within the reported range for approximately 95 of them. Wider intervals at extreme scores reflect greater uncertainty in patients with very high or very low risk profiles.
+            </div>
+            <div class="note">
+                <strong>Interpretation:</strong> Higher rehab score = better rehab potential | Higher LOS score = longer hospital stay<br>
+                Prediction rule derived from 40 patients. External validation recommended.
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Lookup tables for 95% CIs
+        const rehabProbCI = {
+            11: { prob: 0.95, lower: 0.82, upper: 0.99 },
+            10: { prob: 0.92, lower: 0.78, upper: 0.98 },
+            9: { prob: 0.88, lower: 0.72, upper: 0.96 },
+            8: { prob: 0.75, lower: 0.58, upper: 0.87 },
+            7: { prob: 0.68, lower: 0.50, upper: 0.82 },
+            6: { prob: 0.60, lower: 0.42, upper: 0.76 },
+            5: { prob: 0.45, lower: 0.28, upper: 0.63 },
+            4: { prob: 0.35, lower: 0.20, upper: 0.53 },
+            3: { prob: 0.25, lower: 0.12, upper: 0.44 },
+            2: { prob: 0.12, lower: 0.04, upper: 0.30 },
+            1: { prob: 0.08, lower: 0.02, upper: 0.24 },
+            0: { prob: 0.05, lower: 0.01, upper: 0.18 }
+        };
+        
+        const losCI = {
+            0: { los: 18, lower: 14, upper: 22 },
+            1: { los: 20, lower: 16, upper: 24 },
+            2: { los: 24, lower: 19, upper: 29 },
+            3: { los: 26, lower: 21, upper: 31 },
+            4: { los: 30, lower: 24, upper: 36 },
+            5: { los: 33, lower: 27, upper: 39 },
+            6: { los: 38, lower: 30, upper: 46 },
+            7: { los: 41, lower: 32, upper: 50 },
+            8: { los: 43, lower: 33, upper: 53 }
+        };
+        
+        function calculate() {
+            // Get inputs
+            let moca = parseFloat(document.getElementById('moca').value);
+            let albumin = parseFloat(document.getElementById('albumin').value);
+            let comorbidities = parseFloat(document.getElementById('comorbidities').value);
+            let tts = parseFloat(document.getElementById('tts').value);
+            
+            // Rehab Potential Score (higher = better)
+            let mocaPoints = 0;
+            if (moca >= 19) mocaPoints = 4;
+            else if (moca >= 10) mocaPoints = 2;
+            else mocaPoints = 0;
+            
+            let albuminPoints = 0;
+            if (albumin >= 35) albuminPoints = 4;
+            else if (albumin >= 30) albuminPoints = 2;
+            else albuminPoints = 0;
+            
+            let comorbidityPoints = 0;
+            if (comorbidities <= 1) comorbidityPoints = 3;
+            else if (comorbidities <= 3) comorbidityPoints = 1;
+            else comorbidityPoints = 0;
+            
+            let rehabScore = mocaPoints + albuminPoints + comorbidityPoints;
+            let rehabScoreRounded = Math.min(11, Math.max(0, Math.round(rehabScore)));
+            
+            // Get probability with CI
+            let probData = rehabProbCI[rehabScoreRounded] || rehabProbCI[0];
+            let probability = probData.prob;
+            let probLower = probData.lower;
+            let probUpper = probData.upper;
+            
+            // Risk group
+            let riskGroup = '';
+            let badgeClass = '';
+            
+            if (rehabScore >= 9) {
+                riskGroup = 'High rehab potential';
+                badgeClass = 'badge-high';
+            } else if (rehabScore >= 6) {
+                riskGroup = 'Moderate rehab potential';
+                badgeClass = 'badge-moderate';
+            } else if (rehabScore >= 3) {
+                riskGroup = 'Low rehab potential';
+                badgeClass = 'badge-low';
+            } else {
+                riskGroup = 'Very low rehab potential';
+                badgeClass = 'badge-verylow';
+            }
+            
+            // Predicted Barthel change
+            let barthelChange = -5.2 + (0.89 * moca) - (2.8 * comorbidities) + (1.1 * albumin);
+            barthelChange = Math.max(0, Math.round(barthelChange));
+            
+            // LOS Score
+            let losMocaPoints = 0;
+            if (moca < 10) losMocaPoints = 2;
+            else if (moca < 19) losMocaPoints = 1;
+            else losMocaPoints = 0;
+            
+            let losAlbuminPoints = 0;
+            if (albumin < 30) losAlbuminPoints = 2;
+            else if (albumin < 35) losAlbuminPoints = 1;
+            else losAlbuminPoints = 0;
+            
+            let losComorbidityPoints = 0;
+            if (comorbidities >= 4) losComorbidityPoints = 2;
+            else if (comorbidities >= 2) losComorbidityPoints = 1;
+            else losComorbidityPoints = 0;
+            
+            let losTtsPoints = 0;
+            if (tts > 5) losTtsPoints = 2;
+            else if (tts > 2) losTtsPoints = 1;
+            else losTtsPoints = 0;
+            
+            let losScore = losMocaPoints + losAlbuminPoints + losComorbidityPoints + losTtsPoints;
+            let losScoreRounded = Math.min(8, Math.max(0, Math.round(losScore)));
+            
+            let losData = losCI[losScoreRounded] || losCI[0];
+            let predictedLOS = losData.los;
+            let losLower = losData.lower;
+            let losUpper = losData.upper;
+            
+            // Display results with CI
+            document.getElementById('rehabScore').innerHTML = `<strong>${rehabScore} / 11</strong>`;
+            document.getElementById('riskGroup').innerHTML = `<span class="badge ${badgeClass}">${riskGroup}</span>`;
+            document.getElementById('probability').innerHTML = `${(probability * 100).toFixed(0)}% <span class="ci-text">(95% CI: ${(probLower*100).toFixed(0)}–${(probUpper*100).toFixed(0)}%)</span>`;
+            document.getElementById('barthelChange').innerHTML = `<strong>+${barthelChange} points</strong>`;
+            document.getElementById('los').innerHTML = `<strong>${predictedLOS} days</strong> <span class="ci-text">(95% CI: ${losLower}–${losUpper} days, LOS score: ${losScore}/8)</span>`;
+        }
+        
+        // Calculate on page load
+        window.onload = calculate;
+    </script>
+</body>
+</html>
